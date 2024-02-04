@@ -1,0 +1,92 @@
+.nav{
+    background-color: yellow;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    max-width: 1520px;
+}
+h1{
+    margin-left: 5%;
+    text-decoration: solid;
+}
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-container {
+    display: flex;
+    margin-top: 20px;
+}
+.input-name{
+    max-width: 20rem;
+}
+button{
+    height: 1.85rem;
+    background-color: white;
+    border-radius: 2px;
+    border: 0px;
+}
+button:hover{
+    border: 2px solid rgb(238, 255, 52);
+    margin-left: -3px;
+}
+.input-name > input{
+    font-size: 1rem;
+    height: 1.5rem;
+    width: 15rem;
+    border-radius: 5px;
+    outline: 0px;
+}
+.input-name {
+    margin-right: 10px;
+}
+
+.list {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 70px;
+    justify-content: center; /* Center the grid horizontally */
+}
+.card {
+    width: 22rem; /* Adjust the width as needed */
+    height: 20rem; /* Adjust the height as needed */
+    /* background-color: #eee; */
+    /* border: 1px solid #ddd; Add your own styles */
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+img{
+    height: 18rem;
+    max-width: 100% ;
+}
+img:hover{
+    opacity: 0.25;
+}
+.imgNotAvail{
+    margin-top: 18rem;
+}
+.overlay{
+    position: relative;
+    transform: translate(0, -12.5rem);
+    z-index: -1;
+}
+.title{
+    transform: translate(0, -7rem);
+}
+
+@media (max-width: 1170px) {
+    .list {
+        grid-template-columns: 1fr 1fr; /* Change to a single column on smaller screens */
+        column-gap: 45px;
+    }
+}
+@media (max-width: 675px) {
+    .list {
+        grid-template-columns: 1fr; /* Change to a single column on smaller screens */
+    }
+}
